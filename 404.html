@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GROOVE STATION 搬家了</title>
+  <!-- 舊網址 citypop-collection 已改名為 ginimusic-collection，這一頁會把訪客帶到新網址的同一頁 -->
+  
+  <link rel="canonical" href="https://ginichang1214.github.io/ginimusic-collection/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GROOVE STATION">
+  <meta property="og:title" content="GROOVE STATION">
+  <meta property="og:description" content="東京、台北、新奧爾良、亞特蘭大，四條路線串起 1960 到 2026 的城市律動，一鍵收聽。">
+  <meta property="og:url" content="https://ginichang1214.github.io/ginimusic-collection/">
+  <meta property="og:image" content="https://ginichang1214.github.io/ginimusic-collection/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0e1016; color: #f2f4f8;
+           font-family: "Noto Sans TC", system-ui, sans-serif; text-align: center; padding: 16px; box-sizing: border-box; }
+    h1 { margin: 0 0 8px; font-size: 2rem; }
+    h1 span { color: #ffd23f; }
+    a { color: #ffd23f; }
+  </style>
+  <script>
+    // 把舊網址的路徑接到新網址後面，例如 /citypop-collection/tokyo-nights/ → /ginimusic-collection/tokyo-nights/
+    (function () {
+      var OLD = '/citypop-collection';
+      var NEW = 'https://ginichang1214.github.io/ginimusic-collection';
+      var path = location.pathname;
+      if (path.indexOf(OLD) === 0) path = path.slice(OLD.length);
+      if (!path || path === '/index.html') path = '/';
+      location.replace(NEW + path + location.search + location.hash);
+    })();
+  </script>
+</head>
+<body>
+  <main>
+    <h1>GROOVE <span>STATION</span> 搬家了</h1>
+    <p>正在帶你前往新網址……沒有自動跳轉的話，請點 <a href="https://ginichang1214.github.io/ginimusic-collection/">ginichang1214.github.io/ginimusic-collection</a></p>
+  </main>
+</body>
+</html>
